@@ -27,3 +27,9 @@ unit tests, validation, e integration tests.
 
 El flujo de trabajo 'module3_task2.yml' genera un artefacto (awesome-website.zip)
 para cada push en main, el cual contiene el sitio web creado.
+
+## Workflow 3
+
+El flujo de trabajo 'module3_task3.yml' se genera un release cada que se
+da push a un tag, este release es creado automaticamente con el artifact
+creado y con las instrucciones del despliegue
