@@ -1,0 +1,16 @@
+name: u3_tarea0
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'  # Ejecuta todos los días a medianoche UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clona repositorio
+        uses: actions/checkout@v3
+      - name: Validacion del Makefile
+        working-directory: tarea0_u2
+        run: make help

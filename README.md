@@ -6,3 +6,6 @@
 - make build: Genera el sitio web
 - make clean: Limpia el directorio dist/
 - make post POST_NAME=nombreDelPost POST_TITLE="Titulo de post": Crea una nueva entrada en el blog 
+
+## Workflow 0
+El flujo de trabajo 'module3_task0.yml' es lanzado cuando se hace push a la rama main y una vez al dia a la media noche.
