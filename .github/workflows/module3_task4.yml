@@ -3,7 +3,7 @@ name: u3_tarea3
 on:
   push:
     branches: [main]
-  tags:
+    tags:
     - "1.*.*"
   pull_request:
     branches: [main]
