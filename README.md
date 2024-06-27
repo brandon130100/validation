@@ -36,7 +36,8 @@ creado y con las instrucciones del despliegue
 
 ## Workflow 4
 
-El flujo de trabajo 'module3_task4.yml' ahora usa PR para todos los cambios. Un PR solo puede ser unido si pasa todas las validaciones.
+El flujo de trabajo 'module3_task4.yml' ahora usa PR para todos los cambios. Un
+PR solo puede ser unido si pasa todas las validaciones.
 
 ## Colaboracion
 
