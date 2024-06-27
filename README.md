@@ -33,3 +33,15 @@ para cada push en main, el cual contiene el sitio web creado.
 El flujo de trabajo 'module3_task3.yml' se genera un release cada que se
 da push a un tag, este release es creado automaticamente con el artifact
 creado y con las instrucciones del despliegue
+
+## Workflow 4
+
+El flujo de trabajo 'module3_task4.yml' ahora usa PR para todos los cambios. Un PR solo puede ser unido si pasa todas las validaciones.
+
+## Colaboracion
+
+- Crear una rama para nuevas características o correcciones
+- Abrir un Pull Request para fusionar cambios en la rama principal
+- El flujo de trabajo de CI/CD se ejecutará automáticamente
+- Si pasa todas las pruebas, el PR puede ser revisado y fusionado
+- Release Drafter actualizará automáticamente el borrador de la release
