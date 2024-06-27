@@ -1,0 +1,40 @@
+name: u3_tarea2
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clona repositorio
+        uses: actions/checkout@v3
+      - name: Setup environment
+        working-directory: tarea0_u2
+        run: ./setup.sh
+      - name: Lint
+        working-directory: tarea0_u2
+        run: make lint
+      - name: Build
+        working-directory: tarea0_u2
+        run: make build
+      - name: Unit tests
+        working-directory: tarea0_u2
+        run: make unit-tests
+      - name: Validate
+        working-directory: tarea0_u2
+        run: make validate
+      - name: Integration tests
+        working-directory: tarea0_u2
+        run: make integration-tests
+      - name: Package
+        working-directory: tarea0_u2
+        run: make package
+      - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: awesome-website
+          path: tarea0_u2/awesome-website.zip
