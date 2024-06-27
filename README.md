@@ -46,3 +46,7 @@ PR solo puede ser unido si pasa todas las validaciones.
 - El flujo de trabajo de CI/CD se ejecutará automáticamente
 - Si pasa todas las pruebas, el PR puede ser revisado y fusionado
 - Release Drafter actualizará automáticamente el borrador de la release
+
+## Prueba del flujo PR
+
+Esta es una prueba para ver el funcionamiento del flujo del PR
