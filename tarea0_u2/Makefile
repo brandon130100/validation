@@ -10,3 +10,15 @@ post: # Crea un nuevo post, pasando como parametros POST_NAME como el nombre del
 
 help: # Muestra la ayuda del Makefile
 	@grep -E '^[a-zA-Z0-9 -]+:.*#'  Makefile | sort | while read -r l; do printf "\033[1;32m$$(echo $$l | cut -f 1 -d':')\033[00m:$$(echo $$l | cut -f 2- -d'#')\n"; done
+
+lint: ## Verifica que setup.sh tenga el formato correcto
+	shellcheck setup.sh
+
+unit-tests: ## Realiza las pruebas unitarias.
+	echo "Ejecutando las pruebas unitarias..."
+
+validate: ## Realiza validaciones.
+	echo "Validando..."
+
+integration-tests: ## Realiza prubas de integracion.
+	echo "Ejecutando las pruebas de integracion..."
